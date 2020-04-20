@@ -1,0 +1,14 @@
+{
+  "name": "strathwaldean",
+  "version": "1.0.0",
+  "description": "Strathwaldean Quad Website",
+  "scripts": {
+    "build": "echo 'Todo'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djgrant/strathwaldean.git"
+  },
+  "author": "Daniel Grant",
+  "license": "BY-SA"
+}
