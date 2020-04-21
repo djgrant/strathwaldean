@@ -3,13 +3,26 @@
 </script>
 
 <style>
+  header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(53, 155, 53, 0.1);
+  }
+
   nav {
-    border-bottom: 1px solid rgba(255, 62, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
     font-weight: 300;
-    padding: 0 1em;
+  }
+
+  .logo {
+    align-self: center;
+    font-weight: 500;
+    color: rgb(53, 155, 53);
+    font-size: 17px;
   }
 
   ul {
+    justify-self: end;
     margin: 0;
     padding: 0;
   }
@@ -36,7 +49,7 @@
     content: "";
     width: calc(100% - 1em);
     height: 2px;
-    background-color: rgb(255, 62, 0);
+    background-color: rgb(61, 207, 61);
     display: block;
     bottom: -1px;
   }
@@ -45,35 +58,61 @@
     text-decoration: none;
     padding: 1em 0.5em;
     display: block;
+    font-size: 16px;
+  }
+
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+    }
+
+    .logo {
+      margin-top: 20px;
+    }
+
+    ul {
+      align-self: center;
+    }
+
+    a {
+      font-size: 14px;
+    }
   }
 </style>
 
-<nav>
-  <ul>
-    <li>
-      <a aria-current={segment === undefined ? 'page' : undefined} href=".">
-        Home
-      </a>
-    </li>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Strathwaldean Quad</div>
+      <ul>
+        <li>
+          <a aria-current={segment === undefined ? 'page' : undefined} href=".">
+            Latest
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current={segment === 'donate' ? 'page' : undefined}
+            href="donate">
+            Donate
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current={segment === 'get-involved' ? 'page' : undefined}
+            href="get-involved">
+            Get involved
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current={segment === 'about' ? 'page' : undefined}
+            href="about">
+            About
+          </a>
+        </li>
 
-    <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-    <li>
-      <a
-        rel="prefetch"
-        aria-current={segment === 'blog' ? 'page' : undefined}
-        href="blog">
-        Updates
-      </a>
-    </li>
-
-    <li>
-      <a
-        rel="prefetch"
-        aria-current={segment === 'donate' ? 'page' : undefined}
-        href="donate">
-        Donate
-      </a>
-    </li>
-  </ul>
-</nav>
+      </ul>
+    </nav>
+  </div>
+</header>
