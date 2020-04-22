@@ -16,8 +16,12 @@
 
   .logo {
     align-self: center;
-    font-weight: 500;
+  }
+
+  .logo a {
+    text-decoration: none;
     color: rgb(53, 155, 53);
+    font-weight: 500;
     font-size: 17px;
   }
 
@@ -54,7 +58,7 @@
     bottom: -1px;
   }
 
-  a {
+  li a {
     text-decoration: none;
     padding: 1em 0.5em;
     display: block;
@@ -75,7 +79,7 @@
       align-self: center;
     }
 
-    a {
+    li a {
       font-size: 14px;
     }
   }
@@ -84,7 +88,9 @@
 <header>
   <div class="container">
     <nav>
-      <div class="logo">Strathwaldean Quad</div>
+      <div class="logo">
+        <a href="/">Strathwaldean Quad</a>
+      </div>
       <ul>
         <li>
           <a aria-current={segment === undefined ? 'page' : undefined} href=".">
