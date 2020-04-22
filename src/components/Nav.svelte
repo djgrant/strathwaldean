@@ -6,6 +6,7 @@
   header {
     margin-bottom: 20px;
     border-bottom: 1px solid rgba(53, 155, 53, 0.1);
+    background: white;
   }
 
   nav {

@@ -13,19 +13,39 @@
 </script>
 
 <style>
+  .card {
+    /* background: white; */
+    /* padding: 20px 22px; */
+    /* border-radius: 3px; */
+    /* border: 1px solid #e3e3e3; */
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
 
+  .card:last-child {
+    border: none;
+  }
+
+  .date {
+    font-size: 12px;
+    color: #777;
+    margin-top: -6px;
+  }
 </style>
 
 <svelte:head>
-  <title>Latest | Strathwaldean Quad</title>
+  <title>Strathwaldean Quad</title>
 </svelte:head>
 
 {#each posts as post}
-  <!-- we're using the non-standard `rel=prefetch` attribute to
+  <div class="card">
+    <!-- we're using the non-standard `rel=prefetch` attribute to
 				tell Sapper to load the data for the page as soon as
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
-  <h2>{post.title}</h2>
-  {@html post.preview}
-  <a rel="prefetch" href="blog/{post.slug}">Read more</a>
+    <h2>{post.title}</h2>
+    <div class="date">{post.date}</div>
+    {@html post.html}
+  </div>
 {/each}
