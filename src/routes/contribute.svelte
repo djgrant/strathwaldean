@@ -2,7 +2,7 @@
   <title>Pledge</title>
 </svelte:head>
 
-<h1>Donate</h1>
+<h1 class="page-title">Contribute</h1>
 
 <p>
   If you’d like to contribute a small amount towards the project (£20

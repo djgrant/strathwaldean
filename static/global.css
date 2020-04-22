@@ -42,14 +42,20 @@ code {
   border-radius: 2px;
 }
 
-@media (min-width: 400px) {
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 601px) {
   body {
     font-size: 15px;
   }
 }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 20px;
+@media screen and (max-width: 600px) {
+  .page-title {
+    display: none;
+  }
 }

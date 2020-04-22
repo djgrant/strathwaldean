@@ -8,6 +8,8 @@
   <title>Get involved | Strathwaldean Quad</title>
 </svelte:head>
 
+<h1 class="page-title">Get involved</h1>
+
 <p>
   It'd be great to know how everyone thinks the quad should be developed. If
   you're a resident please

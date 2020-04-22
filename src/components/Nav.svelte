@@ -99,9 +99,9 @@
         </li>
         <li>
           <a
-            aria-current={segment === 'donate' ? 'page' : undefined}
-            href="donate">
-            Donate
+            aria-current={segment === 'contribute' ? 'page' : undefined}
+            href="contribute">
+            Contribute
           </a>
         </li>
         <li>
