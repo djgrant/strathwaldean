@@ -22,5 +22,5 @@
   <a href="https://www.facebook.com/Strathwaldean-Quad-109529100733700">
     Facebook group
   </a>
-  to help stay connected.
+  to help discuss and share ideas.
 </p>

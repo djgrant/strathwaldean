@@ -17,5 +17,6 @@
 
 <p>
   Residents are currently restoring what was previously a very overgrown patch
-  of land into a space that can be enjoyed everyone in the surrounding blocks.
+  of land into a space that can be enjoyed by everyone in the surrounding
+  blocks.
 </p>
