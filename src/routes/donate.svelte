@@ -24,10 +24,8 @@
 
 <p>
   If you’d like to help in this way, please
-  <strong>
-    <a href="https://forms.gle/mfhcGykKVJJgV58T6" target="_blank">
-      submit your pledge here
-    </a>
-  </strong>
+  <a href="https://forms.gle/mfhcGykKVJJgV58T6" target="_blank">
+    submit your pledge here
+  </a>
   .
 </p>

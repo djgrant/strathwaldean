@@ -59,6 +59,7 @@
     padding: 1em 0.5em;
     display: block;
     font-size: 16px;
+    font-weight: normal;
   }
 
   @media (max-width: 600px) {
