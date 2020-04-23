@@ -1,1 +1,3 @@
-/survey     /get-involved
+/survey   /get-involved
+/ghost/*  https://strathwaldean.herokuapp.com/ghost/:splat  200
+/admin/*  https://strathwaldean.herokuapp.com/ghost/:splat  200
