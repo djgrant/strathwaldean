@@ -1,10 +1,10 @@
 import pick from "lodash/fp/pick";
-import { api } from "../../services/api.js";
+import { api } from "../services/api.js";
 
 export async function get(req, res) {
-  const { slug } = req.params;
-  const post = await api.posts
-    .read({ slug })
+  const { page } = req.params;
+  const post = await api.pages
+    .read({ slug: page })
     .then(pick(["slug", "title", "created_at", "html"]));
 
   res.writeHead(200, {

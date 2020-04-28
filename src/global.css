@@ -1,3 +1,28 @@
+:root {
+  /* Colours */
+  --blue: #1e97c7;
+  --green: #a4d037;
+  --purple: #ad26b4;
+  --yellow: #fecd35;
+  --red: #f05230;
+  --darkgrey: #15171a;
+  --midgrey: #738a94;
+  --lightgrey: #c5d2d9;
+  --whitegrey: #e5eff5;
+  --pink: #fa3a57;
+  --brown: #a3821a;
+  --darkmode: color(var(--darkgrey) l(+2%));
+}
+
+/* Atomic styles
+/* ---------------------------------------------------------- */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /* Reset
 /* ---------------------------------------------------------- */
 
@@ -276,11 +301,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
-}
-
-::selection {
-  text-shadow: none;
-  background: color(var(--blue) lightness(+30%));
 }
 
 hr {

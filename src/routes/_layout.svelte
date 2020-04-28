@@ -4,6 +4,10 @@
   export let segment;
 </script>
 
+<style src="../global.css" global>
+
+</style>
+
 <Nav {segment} />
 
 <main class="container">

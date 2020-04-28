@@ -1,9 +1,7 @@
 <script context="module">
   import Ghost from "../../components/ghost.svelte";
 
-  export async function preload({ params, query }) {
-    // the `slug` parameter is available because
-    // this file is called [slug].svelte
+  export async function preload({ params }) {
     const res = await this.fetch(`blog/${params.slug}.json`);
     const data = await res.json();
 

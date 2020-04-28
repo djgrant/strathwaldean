@@ -34,7 +34,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #888;
-    margin-top: -14px;
+    margin-top: -8px;
     margin-bottom: 12px;
   }
 
