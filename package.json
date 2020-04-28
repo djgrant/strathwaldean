@@ -12,9 +12,15 @@
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "curl -s strathwaldean.herokuapp.com > /dev/null"
+    }
+  },
   "dependencies": {
     "@tryghost/content-api": "^1.4.1",
     "compression": "^1.7.1",
+    "husky": "^4.2.5",
     "lodash": "^4.17.15",
     "polka": "next",
     "postcss-color-function": "^4.1.0",
