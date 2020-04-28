@@ -34,7 +34,7 @@
       <p>
         {@html post.excerpt}
       </p>
-      <a href={`/posts/${post.slug}`}>Continue reading →</a>
+      <a href={`/posts/${post.slug}`} rel="prefetch">Continue reading →</a>
     </Ghost>
   </div>
 {/each}

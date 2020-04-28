@@ -111,6 +111,7 @@
         <li>
           <a
             aria-current={segment === undefined || segment.startsWith('posts') ? 'page' : undefined}
+            rel="prefetch"
             href=".">
             Latest
           </a>
@@ -118,6 +119,7 @@
         <li>
           <a
             aria-current={segment === 'contribute' ? 'page' : undefined}
+            rel="prefetch"
             href="contribute">
             Contribute
           </a>
@@ -125,6 +127,7 @@
         <li>
           <a
             aria-current={segment === 'get-involved' ? 'page' : undefined}
+            rel="prefetch"
             href="get-involved">
             Get involved
           </a>
@@ -132,6 +135,7 @@
         <li>
           <a
             aria-current={segment === 'about' ? 'page' : undefined}
+            rel="prefetch"
             href="about">
             About
           </a>
