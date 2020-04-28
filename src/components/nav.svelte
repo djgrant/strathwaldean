@@ -67,7 +67,7 @@
 
   li a {
     text-decoration: none;
-    padding: 1em 0.5em;
+    padding: 1.5em 0.5em;
     display: block;
     font-size: 16px;
     font-weight: normal;
@@ -90,13 +90,13 @@
 
     li a {
       font-size: 15px;
+      padding: 1em 0.3em;
     }
   }
 
   @media (max-width: 360px) {
     li a {
       font-size: 14px;
-      padding: 1em 0.3em;
     }
   }
 </style>
