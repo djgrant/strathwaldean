@@ -110,7 +110,7 @@
       <ul>
         <li>
           <a
-            aria-current={segment === undefined || segment.startsWith('blog') ? 'page' : undefined}
+            aria-current={segment === undefined || segment.startsWith('posts') ? 'page' : undefined}
             href=".">
             Latest
           </a>

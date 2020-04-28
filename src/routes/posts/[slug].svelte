@@ -2,7 +2,7 @@
   import Ghost from "../../components/ghost.svelte";
 
   export async function preload({ params }) {
-    const res = await this.fetch(`blog/${params.slug}.json`);
+    const res = await this.fetch(`posts/${params.slug}.json`);
     const data = await res.json();
 
     if (res.status === 200) {
@@ -17,22 +17,10 @@
   export let post;
 </script>
 
-<style>
-  .date {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: #888;
-    margin-top: -14px;
-    margin-bottom: 12px;
-  }
-</style>
-
 <svelte:head>
   <title>{post.title}</title>
 </svelte:head>
 
-<Ghost>
-  <h1>{post.title}</h1>
-  <div class="date">{new Date(post.created_at).toDateString()}</div>
+<Ghost title={post.title} date={post.created_at}>
   {@html post.html}
 </Ghost>
