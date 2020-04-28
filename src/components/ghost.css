@@ -487,22 +487,15 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .post-full-content {
   position: relative;
-  /* margin: 0 auto; */
-  /* padding: 0 170px 6vw; */
   font-family: Georgia, serif;
-  font-size: 1.7rem;
-  line-height: 1.4em;
+  font-size: 1.8rem;
+  line-height: 1.8em;
 }
 
-@media (max-width: 1170px) {
-  .post-full-content {
-    /* padding: 0 11vw; */
-  }
-}
 @media (max-width: 800px) {
   .post-full-content {
-    /* padding: 0 5vw; */
     font-size: 1.7rem;
+    line-height: 1.7em;
   }
 }
 
