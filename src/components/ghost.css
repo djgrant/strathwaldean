@@ -1123,13 +1123,25 @@ Usage (In Ghost editor):
   display: flex;
   flex-direction: column;
   max-width: 1040px;
-  width: 100vw;
+  width: 100%;
 }
 
 .kg-gallery-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+@media (max-width: 601px) {
+  .kg-gallery-row {
+    flex-direction: column;
+  }
+  .kg-gallery-row div {
+    margin: 0 !important;
+  }
+  .kg-gallery-row div:first-child img {
+    margin-bottom: 1em;
+  }
 }
 
 .kg-gallery-image img {
@@ -1296,11 +1308,11 @@ Usage (In Ghost editor):
 }
 
 @media (max-width: 500px) {
-  .post-full-content .kg-width-wide,
+  /* .post-full-content .kg-width-wide,
   .post-full-content .kg-width-full {
     margin-right: -5vw;
     margin-left: -5vw;
-  }
+  } */
 
   .post-full-content figcaption {
     margin-bottom: 0.4em;
