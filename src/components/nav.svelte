@@ -23,7 +23,13 @@
     text-decoration: none;
     color: rgb(53, 155, 53);
     font-weight: 500;
-    font-size: 17px;
+    font-size: 22px;
+  }
+
+  @media (min-width: 601px) {
+    .logo a {
+      font-size: 21px;
+    }
   }
 
   ul {
@@ -65,6 +71,7 @@
     display: block;
     font-size: 16px;
     font-weight: normal;
+    color: var(--brown);
   }
 
   @media (max-width: 600px) {
@@ -77,11 +84,19 @@
     }
 
     ul {
+      margin: 0 -0.7em;
       align-self: center;
     }
 
     li a {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    li a {
       font-size: 14px;
+      padding: 1em 0.3em;
     }
   }
 </style>
@@ -94,7 +109,9 @@
       </div>
       <ul>
         <li>
-          <a aria-current={segment === undefined ? 'page' : undefined} href=".">
+          <a
+            aria-current={segment === undefined || segment.startsWith('blog') ? 'page' : undefined}
+            href=".">
             Latest
           </a>
         </li>

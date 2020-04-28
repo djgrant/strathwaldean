@@ -1,3 +1,7 @@
+<script context="module">
+  import Ghost from "../components/ghost.svelte";
+</script>
+
 <style>
   p {
     margin: 1em 0;
@@ -8,15 +12,17 @@
   <title>Strathwaldean Quad</title>
 </svelte:head>
 
-<h1 class="page-title">About</h1>
+<Ghost>
+  <h1 class="page-title">About</h1>
 
-<p>
-  Strathwaldean Quad is the area between the flats on Strathyre Street, Walton
-  Street, and Deanston Drive.
-</p>
+  <p>
+    Strathwaldean Quad is the area between the flats on Strathyre Street, Walton
+    Street, and Deanston Drive.
+  </p>
 
-<p>
-  Residents are currently restoring what was previously a very overgrown patch
-  of land into a space that can be enjoyed by everyone in the surrounding
-  blocks.
-</p>
+  <p>
+    Residents are currently restoring what was previously a very overgrown patch
+    of land into a space that can be enjoyed by everyone in the surrounding
+    blocks.
+  </p>
+</Ghost>

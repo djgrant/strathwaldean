@@ -1,4 +1,6 @@
 <script context="module">
+  import Ghost from "../components/ghost.svelte";
+
   export function preload({ params, query }) {
     return this.fetch(`blog.json`)
       .then(r => r.json())
@@ -18,8 +20,9 @@
     /* padding: 20px 22px; */
     /* border-radius: 3px; */
     /* border: 1px solid #e3e3e3; */
-    border-bottom: 1px solid #e3e3e3;
-    padding-bottom: 20px;
+    /* border-bottom: 1px solid #e3e3e3; */
+    padding-bottom: 28px;
+    /* margin-bottom: 20px; */
     overflow: hidden;
   }
 
@@ -28,9 +31,15 @@
   }
 
   .date {
-    font-size: 12px;
-    color: #777;
-    margin-top: -6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #888;
+    margin-top: -14px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    margin-bottom: 16px !important;
   }
 </style>
 
@@ -40,12 +49,13 @@
 
 {#each posts as post}
   <div class="card">
-    <!-- we're using the non-standard `rel=prefetch` attribute to
-				tell Sapper to load the data for the page as soon as
-				the user hovers over the link or taps it, instead of
-				waiting for the 'click' event -->
-    <h2>{post.title}</h2>
-    <div class="date">{post.date}</div>
-    {@html post.html}
+    <Ghost>
+      <h1>{post.title}</h1>
+      <div class="date">{new Date(post.created_at).toDateString()}</div>
+      <p>
+        {@html post.excerpt}
+      </p>
+      <a href={`/blog/${post.slug}`}>Continue reading →</a>
+    </Ghost>
   </div>
 {/each}
