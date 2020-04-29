@@ -5,7 +5,7 @@ export async function get(req, res) {
   const { slug } = req.params;
   const post = await api.posts
     .read({ slug })
-    .then(pick(["slug", "title", "created_at", "html"]));
+    .then(pick(["slug", "title", "created_at", "html", "feature_image"]));
 
   res.writeHead(200, {
     "Content-Type": "application/json",

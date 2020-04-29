@@ -30,7 +30,10 @@
 
 {#each posts as post}
   <div class="post">
-    <Ghost title={post.title} date={post.created_at}>
+    <Ghost
+      title={post.title}
+      date={post.created_at}
+      featureImage={post.feature_image}>
       <p>
         {@html post.excerpt}
       </p>

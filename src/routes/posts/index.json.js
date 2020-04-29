@@ -9,7 +9,9 @@ export async function get(req, res) {
 
   const posts = await api.posts
     .browse()
-    .then(map(pick(["slug", "title", "created_at", "excerpt"])));
+    .then(
+      map(pick(["slug", "title", "created_at", "excerpt", "feature_image"]))
+    );
 
   res.end(JSON.stringify(posts));
 }

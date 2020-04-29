@@ -21,6 +21,9 @@
   <title>{post.title}</title>
 </svelte:head>
 
-<Ghost title={post.title} date={post.created_at}>
+<Ghost
+  title={post.title}
+  date={post.created_at}
+  featureImage={post.feature_image}>
   {@html post.html}
 </Ghost>

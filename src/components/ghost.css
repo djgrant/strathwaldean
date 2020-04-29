@@ -132,17 +132,6 @@
   text-indent: -9999px;
 }
 
-/* Custom 
-/* ---------------------------------------------------------- */
-
-.ghost .date {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  color: #888;
-  margin-top: -8px;
-  margin-bottom: 12px;
-}
-
 /* 6. Post Feed
 /* ---------------------------------------------------------- */
 
@@ -580,6 +569,13 @@ make sure this only happens on large viewports / desktop-ish devices.
   max-width: 1040px;
   height: auto;
 }
+
+.post-full-content img.feature-image {
+  max-height: 200px;
+  margin-top: 1.2em;
+  object-fit: cover;
+}
+
 @media (max-width: 1040px) {
   .post-full-content img,
   .post-full-content video {
