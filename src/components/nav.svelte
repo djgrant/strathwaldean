@@ -21,7 +21,7 @@
 
   .logo a {
     text-decoration: none;
-    color: rgb(53, 155, 53);
+    color: var(--green);
     font-weight: 500;
     font-size: 22px;
   }

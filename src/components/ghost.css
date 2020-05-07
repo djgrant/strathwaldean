@@ -11,12 +11,12 @@
 :root {
   /* Colours */
   --blue: #1e97c7;
-  --green: #a4d037;
+  --green: #359b35;
   --purple: #ad26b4;
   --yellow: #fecd35;
   --red: #f05230;
   --darkgrey: #15171a;
-  --midgrey: #738a94;
+  --midgrey: #726c6c;
   --lightgrey: #c5d2d9;
   --whitegrey: #e5eff5;
   --pink: #fa3a57;
@@ -74,7 +74,7 @@
   margin: 1.5em 0;
   padding: 0 1.6em 0 1.6em;
   border-left: #e5eff5 0.5em solid;
-  border-left: var(--whitegrey) 0.5em solid;
+  border-left: var(--brown) 0.5em solid;
 }
 .ghost blockquote p {
   margin: 0.8em 0;
@@ -619,8 +619,9 @@ Usage (In Ghost editor):
 .post-full-content blockquote {
   margin: 0 0 1.5em;
   padding: 0 1.5em;
-  border-left: #3eb0ef 3px solid;
+  border-left: var(--brown) 3px solid;
 }
+
 @media (max-width: 500px) {
   .post-full-content blockquote {
     padding: 0 1.3em;
@@ -780,9 +781,10 @@ Usage (In Ghost editor):
 }
 
 .post-full-content h4 {
-  margin: 0.5em 0 0.2em;
-  font-size: 2.5rem;
+  margin: 0.5em 0 0.4em;
+  font-size: 2.1rem;
   font-weight: 600;
+  color: var(--midgrey);
 }
 .post-full-content h2 + h4 {
   margin-top: 0.7em;
@@ -793,7 +795,7 @@ Usage (In Ghost editor):
 @media (max-width: 800px) {
   .post-full-content h4 {
     margin-bottom: 0.3em;
-    font-size: 2.4rem;
+    font-size: 1.9rem;
     line-height: 1.3em;
   }
 }

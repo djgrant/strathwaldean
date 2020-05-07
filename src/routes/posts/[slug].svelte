@@ -18,7 +18,7 @@
 </script>
 
 <svelte:head>
-  <title>{post.title}</title>
+  <title>{post.title} | Strathwaldean Quad</title>
 </svelte:head>
 
 <Ghost
