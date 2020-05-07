@@ -28,12 +28,12 @@
   <title>Strathwaldean Quad</title>
 </svelte:head>
 
-{#each posts as post}
+{#each posts as post, index}
   <div class="post">
     <Ghost
       title={post.title}
       date={post.created_at}
-      featureImage={post.feature_image}>
+      featureImage={index === 0 && post.feature_image}>
       <p>
         {@html post.excerpt}
       </p>
