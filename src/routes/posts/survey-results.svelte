@@ -105,8 +105,8 @@
   <p>
     From 46 completed surveys, this chart shows the most popular options by
     weighting likes against disklikes. Raised vegetable beds, for example,
-    didn't get as many likes as other, lower ranked, options, but it also got
-    fewer dislikes so has ended up higher in the rankings.
+    didn't get as many likes as other, lower ranked, options, but they also got
+    fewer dislikes so have ended up higher in the rankings.
   </p>
   <h3>Themes</h3>
   <p>
