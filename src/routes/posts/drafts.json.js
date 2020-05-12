@@ -22,7 +22,7 @@ export async function get(req, res) {
       )
     )
     .then((posts) =>
-      posts.filter((p) => !p.tags.find((t) => t.name === "draft"))
+      posts.filter((p) => p.tags.find((t) => t.name === "draft"))
     );
 
   res.end(JSON.stringify(posts));
