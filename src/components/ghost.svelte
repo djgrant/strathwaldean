@@ -17,22 +17,22 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #888;
-    margin-top: -8px;
+    margin-top: -16px;
     margin-bottom: 12px;
   }
 </style>
 
 <div class="ghost">
-  <div class="feature-image">
-    {#if featureImage}
-      <img src={featureImage} alt="{title} feature image" />
-    {/if}
-  </div>
   {#if title}
     <h1>{title}</h1>
   {/if}
   {#if date}
     <div class="date">{new Date(date).toDateString()}</div>
+  {/if}
+  {#if featureImage}
+    <div class="feature-image">
+      <img src={featureImage} alt="{title} feature image" />
+    </div>
   {/if}
   <GhostContent>
     <slot />
