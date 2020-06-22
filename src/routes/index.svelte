@@ -33,7 +33,8 @@
     <Ghost
       title={post.title}
       date={post.created_at}
-      featureImage={index === 0 && post.feature_image}>
+      featureImage={index === 0 && post.feature_image}
+      author={post.primary_author.name}>
       <p>
         {@html post.excerpt}
       </p>

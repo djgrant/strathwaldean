@@ -2,6 +2,7 @@
   import GhostContent from "./ghost-content.svelte";
   export let title;
   export let date;
+  export let author;
   export let featureImage;
 </script>
 
@@ -26,9 +27,10 @@
   {#if title}
     <h1>{title}</h1>
   {/if}
-  {#if date}
-    <div class="date">{new Date(date).toDateString()}</div>
-  {/if}
+  <div class="date">
+    {#if author}Posted by {author} on{/if}
+    {#if date}{new Date(date).toDateString()}{/if}
+  </div>
   {#if featureImage}
     <div class="feature-image">
       <img src={featureImage} alt="{title} feature image" />

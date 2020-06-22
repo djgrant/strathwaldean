@@ -8,7 +8,7 @@ export async function get(req, res) {
   });
 
   const posts = await api.posts
-    .browse({ include: "tags" })
+    .browse({ include: "tags,authors" })
     .then(
       map(
         pick([
@@ -18,6 +18,7 @@ export async function get(req, res) {
           "excerpt",
           "feature_image",
           "tags",
+          "primary_author",
         ])
       )
     )

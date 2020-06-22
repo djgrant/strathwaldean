@@ -24,6 +24,7 @@
 <Ghost
   title={post.title}
   date={post.created_at}
-  featureImage={post.feature_image}>
+  featureImage={post.feature_image}
+  author={post.primary_author.name}>
   {@html post.html}
 </Ghost>

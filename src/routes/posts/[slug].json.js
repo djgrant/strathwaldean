@@ -4,8 +4,17 @@ import { api } from "../../services/api.js";
 export async function get(req, res) {
   const { slug } = req.params;
   const post = await api.posts
-    .read({ slug })
-    .then(pick(["slug", "title", "created_at", "html", "feature_image"]));
+    .read({ slug, include: "authors" })
+    .then(
+      pick([
+        "slug",
+        "title",
+        "created_at",
+        "html",
+        "feature_image",
+        "primary_author",
+      ])
+    );
 
   res.writeHead(200, {
     "Content-Type": "application/json",
