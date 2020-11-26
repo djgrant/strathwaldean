@@ -16,11 +16,9 @@
   export let page;
 </script>
 
-<style>
-  @media screen and (max-width: 600px) {
-    h1 {
-      display: none;
-    }
+<style global>
+  .ghost h1 {
+    margin-bottom: 24px;
   }
 </style>
 
@@ -28,7 +26,6 @@
   <title>Strathwaldean Quad</title>
 </svelte:head>
 
-<Ghost>
-  <h1>{page.title}</h1>
+<Ghost title={page.title}>
   {@html page.html}
 </Ghost>
