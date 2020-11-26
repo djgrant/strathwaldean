@@ -21,7 +21,7 @@
     "@tryghost/content-api": "^1.4.1",
     "compression": "^1.7.1",
     "husky": "^4.2.5",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "polka": "next",
     "postcss-color-function": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
